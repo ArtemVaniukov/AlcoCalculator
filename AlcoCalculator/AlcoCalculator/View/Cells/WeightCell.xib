@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeightCell" rowHeight="162" id="KGk-i7-Jjw" customClass="WeightCell" customModule="AlcoCalculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-CM-g5T" userLabel="WeightPickerView">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="115"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вес" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmN-7O-Ml0">
+                                <rect key="frame" x="16" y="0.0" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="кг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-Rw-W2p">
+                                <rect key="frame" x="429.5" y="0.0" width="16.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-pz-yGH">
+                                <rect key="frame" x="0.0" y="62" width="462" height="53"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-66-htB">
+                                        <rect key="frame" x="0.0" y="0.0" width="462" height="53"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DjU-66-htB" secondAttribute="trailing" id="AxT-YT-ndQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DjU-66-htB" secondAttribute="bottom" id="NlY-n1-l1k"/>
+                                    <constraint firstItem="DjU-66-htB" firstAttribute="leading" secondItem="f3r-pz-yGH" secondAttribute="leading" id="Pb4-jk-Ze4"/>
+                                    <constraint firstAttribute="height" constant="53" id="tmV-RB-eaP"/>
+                                    <constraint firstItem="DjU-66-htB" firstAttribute="top" secondItem="f3r-pz-yGH" secondAttribute="top" id="zP8-bO-bEw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WmN-7O-Ml0" firstAttribute="top" secondItem="TUc-CM-g5T" secondAttribute="top" id="2co-Az-nSb"/>
+                            <constraint firstAttribute="trailing" secondItem="Bqq-Rw-W2p" secondAttribute="trailing" constant="16" id="C3M-15-bwm"/>
+                            <constraint firstItem="f3r-pz-yGH" firstAttribute="top" secondItem="WmN-7O-Ml0" secondAttribute="bottom" constant="21" id="be9-S8-iFc"/>
+                            <constraint firstItem="Bqq-Rw-W2p" firstAttribute="top" secondItem="TUc-CM-g5T" secondAttribute="top" id="g17-ak-tyf"/>
+                            <constraint firstAttribute="trailing" secondItem="f3r-pz-yGH" secondAttribute="trailing" id="gkh-SV-Hta"/>
+                            <constraint firstItem="f3r-pz-yGH" firstAttribute="bottom" secondItem="TUc-CM-g5T" secondAttribute="bottom" id="k7Z-aD-aZp"/>
+                            <constraint firstItem="WmN-7O-Ml0" firstAttribute="leading" secondItem="TUc-CM-g5T" secondAttribute="leading" constant="16" id="lFN-y9-zjM"/>
+                            <constraint firstItem="f3r-pz-yGH" firstAttribute="leading" secondItem="TUc-CM-g5T" secondAttribute="leading" id="qJ2-df-3Mg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TUc-CM-g5T" secondAttribute="trailing" id="7ND-ov-wld"/>
+                    <constraint firstAttribute="bottom" secondItem="TUc-CM-g5T" secondAttribute="bottom" constant="60" id="Va5-wK-7HP"/>
+                    <constraint firstItem="TUc-CM-g5T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rA2-KQ-A0K"/>
+                    <constraint firstItem="TUc-CM-g5T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tyQ-42-mK8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <connections>
+                <outlet property="picker" destination="DjU-66-htB" id="PI3-Zm-HXi"/>
+                <outlet property="weightTitle" destination="WmN-7O-Ml0" id="iVI-Kk-NzJ"/>
+                <outlet property="weightUnitTitle" destination="Bqq-Rw-W2p" id="1lu-GZ-AGo"/>
+            </connections>
+            <point key="canvasLocation" x="157.97101449275362" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.80392156862745101" green="0.80392156862745101" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
